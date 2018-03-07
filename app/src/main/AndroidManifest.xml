@@ -56,7 +56,8 @@
             android:name=".LaporanActivity"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".JadwalActivity" />
-        <activity android:name=".DetailLaporanActivity"></activity>
+        <activity android:name=".DetailLaporanActivity" />
+        <activity android:name=".ReportResultActivity"></activity>
     </application>
 
 </manifest>

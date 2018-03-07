@@ -10,11 +10,14 @@ import android.widget.RelativeLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import id.towercontroller.org.towercontroller.model.ReportResult;
 import id.towercontroller.org.towercontroller.tools.TowerControllerSessionManager;
 
 public class DashboardActivity extends AppCompatActivity {
     public static final String TAG = "[DashboardActivity]";
 
+    @BindView(R.id.btnReportRes)
+    Button btnReportRes;
     @BindView(R.id.btnJadwal)
     Button btnJadwal;
     @BindView(R.id.btnLaporan)
@@ -34,6 +37,13 @@ public class DashboardActivity extends AppCompatActivity {
             sessionManager.logout();
         }
 
+        btnReportRes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashboardActivity.this, ReportResultActivity.class);
+                startActivity(intent);
+            }
+        });
         btnLaporan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

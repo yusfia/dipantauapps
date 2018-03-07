@@ -26,16 +26,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <!--
+
             <Button
-                android:id="@+id/btnProfil"
+                android:id="@+id/btnReportRes"
                 android:layout_height="100dp"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 android:background="@drawable/selector_xml_btn_white"
-                android:hint="Profil"/>
-            -->
+                android:hint="Hasil Laporan"/>
+
             <Button
                 android:id="@+id/btnJadwal"
                 android:layout_height="100dp"
