@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.towercontroller.org.towercontroller.DashboardActivity">
+
+    <ImageView
+        android:id="@+id/dashboardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/welcome"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/dashboardHeader"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--
+            <Button
+                android:id="@+id/btnProfil"
+                android:layout_height="100dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_xml_btn_white"
+                android:hint="Profil"/>
+            -->
+            <Button
+                android:id="@+id/btnJadwal"
+                android:layout_height="100dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_xml_btn_white"
+                android:hint="Jadwal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLaporan"
+                android:layout_height="100dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_xml_btn_white"
+                android:hint="Laporan"/>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_height="100dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_xml_btn_white"
+                android:hint="Logout"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
